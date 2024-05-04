@@ -29,7 +29,7 @@ int main(void)
     deflateInit(&defstrm, Z_BEST_COMPRESSION);
     deflate(&defstrm, Z_FINISH);
     deflateEnd(&defstrm);
-    // printf("Compressed length: %lu\n", defstrm.total_out);
+    printf("Compressed length: %lu\n", defstrm.total_out);
     // for (unsigned long i = 0; i < defstrm.total_out; i++) {
     //     printf("%02x", outputBytes[i]);
     // }

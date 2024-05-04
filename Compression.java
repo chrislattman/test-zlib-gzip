@@ -25,8 +25,8 @@ public class Compression {
         compressor.setInput(inputBytes);
         compressor.finish();
         int compressedLength = compressor.deflate(outputBytes);
-        System.out.println("Compressed length: " + compressedLength);
         compressor.end();
+        System.out.println("Compressed length: " + compressedLength);
         // for (int i = 0; i < compressedLength; i++) {
         //     String st = String.format("%02x", outputBytes[i]);
         //     System.out.print(st);
