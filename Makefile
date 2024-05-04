@@ -21,6 +21,6 @@ c:
 	./compression
 
 clean:
-	rm -rf *.class target compression *.gz
+	rm -rf *.class target compression *.exe *.gz
 
 .PHONY: java python nodejs go rust c clean
