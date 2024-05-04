@@ -41,7 +41,6 @@ public class Compression {
         decompressor.end();
 
         // Decode the bytes into a String
-        String outputString = new String(result, 0, uncompressedLength, StandardCharsets.UTF_8);
-        System.out.println(outputString);
+        System.out.println(new String(result, 0, uncompressedLength, StandardCharsets.UTF_8));
     }
 }

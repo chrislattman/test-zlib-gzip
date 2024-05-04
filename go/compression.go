@@ -9,6 +9,7 @@ import (
 	"os"
 )
 
+// For some reason Go doesn't compress as well as the other languages
 func main() {
 	inputString := "blahblahblahblahblah"
 	fmt.Println(inputString)

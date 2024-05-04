@@ -1,2 +1,5 @@
-*.gz
 .DS_Store
+*.gz
+*.class
+target/
+compression
