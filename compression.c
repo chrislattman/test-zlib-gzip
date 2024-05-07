@@ -50,4 +50,5 @@ int main(void)
     // Decode the bytes to a string
     result[infstrm.total_out] = '\0';
     printf("%s\n", result);
+    return 0;
 }
