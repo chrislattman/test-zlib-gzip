@@ -1,5 +1,5 @@
-const zlib = require("node:zlib");
 const fs = require("node:fs");
+const zlib = require("node:zlib");
 
 const inputString = "blahblahblahblahblah";
 console.log(inputString);
