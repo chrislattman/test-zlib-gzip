@@ -13,7 +13,7 @@ go:
 	./compression
 
 rust:
-	cargo build --bin compression
+	cargo build -q --bin compression
 	./target/debug/compression
 
 c:
