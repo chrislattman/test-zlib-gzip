@@ -20,7 +20,11 @@ c:
 	gcc -Wall -Wextra -Werror -pedantic -std=c99 -o compression compression.c -lz
 	./compression
 
+csharp:
+	dotnet build
+	./bin/Debug/net9.0/test-zlib-gzip
+
 clean:
-	rm -rf *.class target compression *.exe *.gz
+	rm -rf *.class target compression *.exe *.gz bin obj
 
 .PHONY: java python nodejs go rust c clean

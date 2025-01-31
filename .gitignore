@@ -5,3 +5,5 @@ target/
 compression
 *.exe
 .vscode/
+bin/
+obj/
