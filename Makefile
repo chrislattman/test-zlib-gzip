@@ -27,4 +27,4 @@ csharp:
 clean:
 	rm -rf *.class target compression *.exe *.gz bin obj
 
-.PHONY: java python nodejs go rust c clean
+.PHONY: java python nodejs go rust c csharp clean
