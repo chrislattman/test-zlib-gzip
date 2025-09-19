@@ -23,15 +23,12 @@ fn main() {
     compressor.write_all(input_bytes).unwrap();
     let output_bytes = compressor.finish().unwrap();
     println!("Compressed length: {}", output_bytes.len());
-    // for byte in output_bytes.iter() {
-    //     print!("{byte:02x?}");
-    // }
-    // println!();
+    // println!("{}", output_bytes.iter().map(|b| format!("{:02x}", b)).collect::<String>());
 
     // Decompress the bytes
     let mut decompressor = ZlibDecoder::new(&output_bytes[..]);
     let mut result = [0u8; 100];
-    decompressor.read_exact(&mut result).unwrap(); // also decompressor.read_to_string()
+    decompressor.read(&mut result).unwrap(); // also decompressor.read_to_string()
 
     // Decode the bytes to a str
     println!("{}", str::from_utf8(&result).unwrap());

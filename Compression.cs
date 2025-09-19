@@ -17,11 +17,7 @@ compressor.Write(inputBytes);
 compressor.Dispose();
 byte[] outputBytes = ostream.ToArray();
 Console.WriteLine("Compressed length: " + outputBytes.Length);
-// foreach (byte b in outputBytes)
-// {
-//     Console.Write(b.ToString("x2"));
-// }
-// Console.WriteLine();
+// Console.WriteLine(Convert.ToHexStringLower(outputBytes));
 
 // Decompress the bytes
 MemoryStream istream = new(outputBytes, false);
