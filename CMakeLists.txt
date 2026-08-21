@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 3.22)
 project(test-zlib-gzip C)
 
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+
 find_package(ZLIB REQUIRED)
 
 add_executable(compression compression.c)
