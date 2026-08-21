@@ -1,3 +1,5 @@
+# Has to be named test_compression.py due to a module name collision with an
+# existing file compression.py in the Python standard library
 import gzip
 import zlib
 

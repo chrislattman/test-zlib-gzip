@@ -3,7 +3,7 @@ java:
 	java Compression
 
 python:
-	python3 compression.py
+	python3 test_compression.py
 
 nodejs:
 	node compression.js
@@ -17,8 +17,10 @@ rust:
 	./target/debug/compression
 
 c:
-	gcc -Wall -Wextra -Werror -pedantic -std=c99 -o compression compression.c -lz
-	./compression
+	cmake --build build
+	cmake --build build --target run-compression
+# 	gcc -Wall -Wextra -Werror -pedantic -std=c99 -o compression compression.c -lz
+# 	./compression
 
 csharp:
 	dotnet build

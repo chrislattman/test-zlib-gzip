@@ -7,3 +7,5 @@ compression
 .vscode/
 bin/
 obj/
+build/
+CMakeUserPresets.json
