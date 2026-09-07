@@ -23,8 +23,8 @@ c:
 # 	./compression
 
 csharp:
-	dotnet build
-	./bin/Debug/net9.0/test-zlib-gzip
+	dotnet build -v q
+	./bin/Debug/net10.0/test-zlib-gzip
 
 clean:
 	rm -rf *.class target compression *.exe *.gz bin obj
