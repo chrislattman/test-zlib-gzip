@@ -17,8 +17,8 @@ rust:
 	./target/debug/compression
 
 c:
-	cmake --build build
-	cmake --build build --target run-compression
+	cmake --build build -- --quiet
+	cmake --build build --target run-compression -- --quiet
 # 	gcc -Wall -Wextra -Werror -pedantic -std=c99 -o compression compression.c -lz
 # 	./compression
 
