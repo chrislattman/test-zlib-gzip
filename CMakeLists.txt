@@ -14,4 +14,6 @@ add_custom_target(run-compression
     COMMAND compression
     DEPENDS compression
     WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}"
+    USES_TERMINAL
+    VERBATIM
 )
