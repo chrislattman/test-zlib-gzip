@@ -18,7 +18,7 @@ rust:
 
 c:
 	cmake --build build -- --quiet
-	cmake --build build --target run-compression -- --quiet
+	./build/compression
 # 	gcc -Wall -Wextra -Werror -pedantic -std=c99 -o compression compression.c -lz
 # 	./compression
 
@@ -27,6 +27,6 @@ csharp:
 	./bin/Debug/net10.0/test-zlib-gzip
 
 clean:
-	rm -rf *.class target compression *.exe *.gz bin obj
+	rm -rf *.class target compression *.exe *.gz go/*.gz bin obj
 
 .PHONY: java python nodejs go rust c csharp clean
