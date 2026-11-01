@@ -4,7 +4,6 @@
 target/
 compression
 *.exe
-.vscode/
 bin/
 obj/
 build/
